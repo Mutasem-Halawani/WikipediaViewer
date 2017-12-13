@@ -10,16 +10,41 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css">
         <link rel="stylesheet" href="main.css">
-        <!--<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">-->
     </head>
     <body>
+        <header>
+            <h1>Wikipedia Viewer</h1>
+        </header>
         <main>
-            <input type="search" placeholder="Search Wikipedia">
-            <i class="fa fa-search fa-4x" aria-hidden="true"></i>
-            <p>Click icon to search</p>
+            <div class="main-wrapper">
+                <div class="search-section">
+                    <form>
+                        <div class="md-form">
+                            <i class="fa fa-search prefix grey-text"></i>
+                            <input type="text" id="searchForm" class="form-control">
+                            <label for="searchForm">Search Wikipedia</label>
+                        </div>
+                        <button type="button" class="btn btn-primary">GO!</button>
+                    </form>
+                </div>
+                <div class="cards-section">
+                    <div class="card">
+                        <a href="#">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </main>
+                
+
         <script src="jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
