@@ -21,6 +21,22 @@ h1{
     text-align: center;
 }
 
+.cards-section{
+    margin-top: 1rem;
+}
+
+.card{
+    margin: 1rem 0;
+}
+
+.card:hover{
+    background-color: #1DB7FF;
+}
+
+.card:active{
+    background-color: #1DB7FF;
+}
+
 
 @media screen  and (max-width : 800px){
     .main-wrapper{
@@ -30,5 +46,12 @@ h1{
     .md-form{
         margin: 0 auto;
         width: 85%;
+    }
+}
+
+@media screen  and (min-width : 800px){
+    .card:hover{
+        transform: scale(1.05);
+        transition: transform 0.2s;
     }
 }
